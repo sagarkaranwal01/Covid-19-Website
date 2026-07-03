@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Pulse Response Portal</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span> Covid&nbsp;19</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="gallery.html" data-page="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="donate.html" data-page="donate.html">Donate</a></li>
+      <li><a href="register.html" data-page="register.html">Register</a></li>
+      <li data-auth-slot></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="justify-content:center; color:var(--amber-500);">We're listening</span>
+    <h1>Get in touch with the response team</h1>
+    <p>Questions about testing, vaccination sites, or relief support — send us a message and we'll respond within 24 hours.</p>
+  </div>
+</div>
+<span class="pulse-divider dark" data-auto></span>
+
+<section>
+  <div class="container" style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:48px; align-items:flex-start;">
+    <div>
+      <span class="eyebrow">Reach us directly</span>
+      <h2>Other ways to connect</h2>
+      <div class="guideline">
+        <div class="icon">✉️</div>
+        <div><h3 style="margin-bottom:4px;">Email</h3><p style="margin:0;">sagarkarawal@gmail.com</p></div>
+      </div>
+      <div class="guideline">
+        <div class="icon">📞</div>
+        <div><h3 style="margin-bottom:4px;">Helpline</h3><p style="margin:0;">+91 75051 84567 · 8am–8pm, every day</p></div>
+      </div>
+      <div class="guideline">
+        <div class="icon">📍</div>
+        <div><h3 style="margin-bottom:4px;">Coordination office</h3><p style="margin:0;">220 roorke Street, sector 4, Uttrakhand ,india</p></div>
+      </div>
+    </div>
+
+    <div class="form-shell wide">
+      <div class="form-msg" id="formMsg"></div>
+      <form id="contactForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option>General question</option>
+            <option>Testing site inquiry</option>
+            <option>Vaccination scheduling</option>
+            <option>Relief fund support</option>
+            <option>Report an issue</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" style="padding:24px 0;">
+  <div class="container footer-bottom" style="border:none; padding:0;">
+    <span>© 2021 Covid 19 Portal</span>
+    <span>Responses typically arrive within 24 hours</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

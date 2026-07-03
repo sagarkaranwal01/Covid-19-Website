@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span> Covid&nbsp;19</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="gallery.html" data-page="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="donate.html" data-page="donate.html">Donate</a></li>
+      <li><a href="register.html" data-page="register.html">Register</a></li>
+      <li data-auth-slot></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="auth-shell">
+  <div class="auth-side">
+    <span class="eyebrow" style="color:var(--amber-500);">Join the network</span>
+    <h2>Get alerts tuned to your area</h2>
+    <p class="lead">A free account unlocks local outbreak notices, vaccination slot reminders, and priority updates from the relief fund.</p>
+    <ul>
+      <li>Verified case data for your region</li>
+      <li>Slot reminders for vaccination drives</li>
+      <li>Direct line to relief coordinators</li>
+    </ul>
+  </div>
+  <div class="auth-form-side">
+    <div class="form-shell">
+      <span class="eyebrow">Create account</span>
+      <h2 style="margin-bottom:6px;">Register</h2>
+      <p style="margin-bottom:24px;">Takes less than a minute.</p>
+
+      <div class="form-msg" id="formMsg"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="field">
+          <label for="full_name">Full name</label>
+          <input type="text" id="full_name" name="full_name" placeholder="enter your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="enter your email" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="At least 6 characters" required minlength="6">
+          <div class="field-hint">Use at least 6 characters. Avoid reusing passwords from other sites.</div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Create account</button>
+      </form>
+
+      <p class="form-foot">Already registered? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer" style="padding:24px 0;">
+  <div class="container footer-bottom" style="border:none; padding:0;">
+    <span>© 2021 Covid 19 Portal</span>
+    <span>Your data is stored securely and never sold</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

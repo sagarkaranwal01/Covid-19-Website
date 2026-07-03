@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Pulse Response Portal</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span> Covid&nbsp;19</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="gallery.html" data-page="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="donate.html" data-page="donate.html">Donate</a></li>
+      <li><a href="register.html" data-page="register.html">Register</a></li>
+      <li data-auth-slot></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="justify-content:center; color:var(--amber-500);">Field gallery</span>
+    <h1>Frontline moments from the response</h1>
+    <p>A record of testing sites, vaccination drives, and the people carrying out relief work.</p>
+  </div>
+</div>
+<span class="pulse-divider dark" data-auto></span>
+
+<section>
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="testing">Testing</button>
+      <button class="filter-chip" data-filter="vaccination">Vaccination</button>
+      <button class="filter-chip" data-filter="relief">Relief work</button>
+      <button class="filter-chip" data-filter="frontline">Frontline staff</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <div class="lightbox-inner">
+    <img id="lightboxImg" src="" alt="">
+    <p class="lightbox-cap" id="lightboxCap"></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2021 Covid 19 Portal</span>
+      <span>Data updated daily · Not a substitute for medical advice</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
