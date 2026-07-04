@@ -1,4 +1,4 @@
-# Pulse Response — COVID-19 Website
+# COVID-19 Website
 
 A 6-page COVID-19 information & response portal: Home, Gallery, Register, Login, Contact, Donate.
 
